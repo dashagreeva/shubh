@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1b2a;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: yellow;
+        }
+
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .header {
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                0 0 20px rgba(255, 255, 255, 0.6),
+                0 0 30px rgba(255, 255, 255, 0.4);
+            animation: glow 1.5s infinite alternate;
+            padding: 20px;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                    0 0 20px rgba(255, 255, 255, 0.6),
+                    0 0 30px rgba(255, 255, 255, 0.4);
+            }
+
+            to {
+                text-shadow: 0 0 15px rgba(255, 255, 255, 1),
+                    0 0 25px rgba(255, 255, 255, 0.8),
+                    0 0 35px rgba(255, 255, 255, 0.6);
+            }
+        }
+
+        .typewriter {
+            font-size: 24px;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: normal;
+            color: rgb(255, 230, 0);
+            border-right: 4px;
+
+            width: 0;
+            margin: 20px auto;
+            padding: 0 20px;
+            animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: white;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 15px;
+            }
+
+            .menu a {
+                font-size: 16px;
+            }
+
+            .header {
+                font-size: 28px;
+            }
+
+            .typewriter {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="index.html">मुख्य पृष्ठ</a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </nav>
+    <div class="content">
+        <header>
+            <h1 class="header">सारांश:ठाकुर का कुआँ</h1>
+        </header>
+        <div class="typewriter">
+            <p>कहानी की पृष्ठभूमि गाँव की है, जहाँ ठाकुर का एक कुआँ है। गाँव में ठाकुर के कुएँ का पानी सबसे शुद्ध और साफ
+                माना जाता है। हालांकि, गाँव के निम्न जाति के लोगों को इस कुएँ से पानी भरने का अधिकार नहीं है, क्योंकि उस
+                समय समाज में ऊँच-नीच का भेदभाव बहुत गहरा था। ठाकुर का कुआँ केवल उच्च जातियों के लिए आरक्षित था, और निम्न
+                जाति के लोग उस कुएँ से पानी नहीं भर सकते थे। वे लोग आमतौर पर गंदे और प्रदूषित जगहों से पानी लाने के लिए
+                मजबूर होते थे। कहानी की मुख्य पात्र "गंगी" है, जो एक निम्न जाति की स्त्री है। उसके घर में पानी की भारी
+                कमी होती है क्योंकि उसका पति, "जोखू", बीमार है और गंदा पानी पीने की वजह से उसकी हालत और बिगड़ती जा रही
+                है। गंगी को चिंता होती है कि अगर उसका पति गंदा पानी पीता रहा तो उसकी जान को खतरा हो सकता है। गंगी चाहती
+                है कि वह अपने पति के लिए ठाकुर के कुएँ से साफ पानी लाए, लेकिन उसे समाज के नियमों का डर है। गंगी रात के
+                समय ठाकुर के कुएँ पर जाती है, ताकि वह चोरी से पानी भर सके। उसकी यह सोच होती है कि रात में किसी की नज़र
+                नहीं पड़ेगी, और वह चुपचाप पानी ले आएगी। जब वह कुएँ पर पहुँचती है, तो डरते-डरते पानी भरने की कोशिश करती
+                है। लेकिन जैसे ही वह पानी खींचने लगती है, ठाकुर का सेवक आकर उसे देख लेता है। डर के मारे गंगी अपनी बाल्टी
+                छोड़कर भाग जाती है। गंगी का यह प्रयास असफल हो जाता है और वह फिर से गंदे तालाब से पानी लाने के लिए मजबूर
+                होती है।
+            </p>
+        </div>
+</body>
+
+</html>
